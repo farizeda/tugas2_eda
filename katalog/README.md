@@ -4,14 +4,12 @@ Aplikasi dari Katalog terdapat dalam link: [https://eda-pbp-tugas-2.herokuapp.co
 # Jawaban
 
 ### 1. Buatlah bagan yang berisi *request client* ke web aplikasi berbasis Django beserta responnya dan jelaskan pada bagan tersebut kaitan antara **urls.py**, **views.py**, **models.py**, dan berkas **html**;
-![Bagan MVT](/tugas2_eda/Bagan.png)
+![Bagan MVT](Bagan.png)
 1. User yang tersambung dengan internet membuat permintaan kepada Django
 2. Permintaan tersebut diproses dalam bentuk urls.py dan dihandle oleh views.py yang ada
 3. Jika dibutuhkan untuk memakai data pada database, maka views akan memanggil query ke models.py dan dikembalikan lagi ke views
 4. Setelah semua permintaan sudah terpenuhi, maka views akan meneruskannya ke file HTML yang ada
 5. HTML yang sudah terdefinisi dikembalikan ke user
-
-
 
 
 ### 2. Jelaskan kenapa menggunakan *virtual environment*? Apakah kita tetap dapat membuat aplikasi web berbasis Django tanpa menggunakan *virtual environment*?
