@@ -1,0 +1,112 @@
+[
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 1,
+        "fields": {
+            "watched": "Yes",
+            "title": "Interstellar",
+            "rating": 9.0,
+            "release_date": "November 6, 2014",
+            "review": "Surreal"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 2,
+        "fields": {
+            "watched": "Yes",
+            "title": "Up",
+            "rating": 9.8,
+            "release_date": "July 29, 2009",
+            "review": "Childhood"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 3,
+        "fields": {
+            "watched": "Yes",
+            "title": "Shrek",
+            "rating": 8.2,
+            "release_date": "April 22, 2001",
+            "review": "Hilarious"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 4,
+        "fields": {
+            "watched": "Yes",
+            "title": "Arrival",
+            "rating": 9.4,
+            "release_date": "January 4, 2017",
+            "review": "Mindbending"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 5,
+        "fields": {
+            "watched": "Yes",
+            "title": "Truth or Dare",
+            "rating": 8.2,
+            "release_date": "May 2, 2018",
+            "review": "Heartgripping"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 6,
+        "fields": {
+            "watched": "Yes",
+            "title": "Inside Out",
+            "rating": 9.5,
+            "release_date": "August 19, 2015",
+            "review": "Powerful"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 7,
+        "fields": {
+            "watched": "Yes",
+            "title": "Us",
+            "rating": 8.9,
+            "release_date": "September 20, 2019",
+            "review": "Chilling"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 8,
+        "fields": {
+            "watched": "Yes",
+            "title": "Weathering with You",
+            "rating": 8.5,
+            "release_date": "August 21, 2019",
+            "review": "Heartwarming"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 9,
+        "fields": {
+            "watched": "Yes",
+            "title": "Pengabdi Setan 2: Communion",
+            "rating": 5,
+            "release_date": "August 4, 2022",
+            "review": "Pointless"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 10,
+        "fields": {
+            "watched": "Yes",
+            "title": "Coco",
+            "rating": 9.2,
+            "release_date": "November 22, 2017",
+            "review": "Touching"
+        }
+    }
+]
