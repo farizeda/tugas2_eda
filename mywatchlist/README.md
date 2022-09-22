@@ -45,3 +45,9 @@ Data delivery merupakan suatu aspek yang krusial dalam implementasi sebuah plarf
 9. Membuat file mywatchlist.html untuk tampilan dalam website
 10. Melakukan loaddata atas file initial_watchlist_data.json
 11. Melakukan git add, commit, dan push ke github yang nantinya akan auto-deploy di heroku
+
+
+### POSTMAN
+![HTML](html.png)
+![JSON](json.png)
+![XML](xml.png)
