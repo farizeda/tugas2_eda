@@ -51,3 +51,8 @@ Data delivery merupakan suatu aspek yang krusial dalam implementasi sebuah plarf
 ![HTML](html.png)
 ![JSON](json.png)
 ![XML](xml.png)
+
+Raw
+![HTML](html_raw.png)
+![JSON](json_raw.png)
+![XML](xml_raw.png)

@@ -9,9 +9,26 @@ def show_watchlist(request):
         'list_film' : data_watchlist,
         'nama': 'Muhammad Fariz Eda Andhika',
         'npm': '2106653546',
+        'message' : extra()
     }
 
     return render(request, "mywatchlist.html", context)
+
+def extra():
+    daftar_watchlist = MyWatchList.objects.all().values("watched")
+    # Initial values
+    jumlah_yes = 0
+    jumlah_no = 0
+    for i in daftar_watchlist:
+        if i['watched'] == 'Yes':
+            jumlah_yes += 1
+        else:
+            jumlah_no += 1
+    
+    if jumlah_no >= jumlah_yes:
+        return "Wah, kamu masih sedikit menonton!"
+    return "Selamat, kamu sudah banyak menonton!"
+
 
 def show_xml(request):
     data = MyWatchList.objects.all()
