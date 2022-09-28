@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div>
+  <h1>{{user}}'s Todo list</h1>
+</div>
+
+<table>
+  <tr>
+    <th>Creation Date</th>
+    <th>Title</th>
+    <th>Description</th>
+  </tr>
+
+  {% for task in todo %}
+  <tr>
+    <th>{{task.date}}</th>
+    <th>{{task.title}}</th>
+    <th>{{task.description}}</th>
+  </tr>
+  {% endfor %}
+</table>
+
+
+Need more task?
+<button><a href="{% url 'todolist:show_create_page' %}">Add Task</a></button>
+<button><a href="{% url 'todolist:logout' %}">Logout</a></button>
+
+{% endblock content %}

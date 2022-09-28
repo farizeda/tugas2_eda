@@ -9,7 +9,7 @@ def show_watchlist(request):
         'list_film' : data_watchlist,
         'nama': 'Muhammad Fariz Eda Andhika',
         'npm': '2106653546',
-        'message' : extra()
+        'message' : extra(),
     }
 
     return render(request, "mywatchlist.html", context)
@@ -30,14 +30,12 @@ def extra():
     return "Selamat, kamu sudah banyak menonton!"
 
 
-def show_xml(request):
+def show_type(request, type):
     data = MyWatchList.objects.all()
-    return HttpResponse(serializers.serialize("xml", data), content_type="application/xml")
-
-
-def show_json(request):
-    data = MyWatchList.objects.all()
-    return HttpResponse(serializers.serialize("json", data), content_type="application/json")
+    if(type == 'xml'):
+        return HttpResponse(serializers.serialize("xml", data), content_type="application/xml")
+    else:
+        return HttpResponse(serializers.serialize("json", data), content_type="application/json")
 
 def show_json_by_id(request, id):
     data = MyWatchList.objects.filter(pk=id)
