@@ -42,14 +42,14 @@ Kekurangan:
 
 ### Jelaskan tag HTML5 yang kamu ketahui.
 
-* <header> : merepresentasikan header sebuah dokumen atau bagian
-* <nav>	: mendefinisi sebuah bagian untuk navigation lins
-* <picture> : mendefinisi seebuah container untuk sumber-sumber gambar 
-* <section> : mendefinisi sebuah section sebuah dokument, seperti heade, footer, etc
-* <source> : alternatif untuk medefinisikan sumber media seperti <audio> atau <video>
-* <aside> :  mendefinisikan konten yang berhubungan dengan konten halaman
-* <footer>: merepresentasikan sebuah footer dari dokumen
-* <article>: mendefinisikan sebuah article
+* < header> : merepresentasikan header sebuah dokumen atau bagian
+* < nav>	: mendefinisi sebuah bagian untuk navigation lins
+* < picture> : mendefinisi seebuah container untuk sumber-sumber gambar 
+* < section> : mendefinisi sebuah section sebuah dokument, seperti heade, footer, etc
+* < source> : alternatif untuk medefinisikan sumber media seperti < audio> atau < video>
+* < aside> :  mendefinisikan konten yang berhubungan dengan konten halaman
+* < footer>: merepresentasikan sebuah footer dari dokumen
+* < article>: mendefinisikan sebuah article
 
 ### Jelaskan tipe-tipe CSS selector yang kamu ketahui.
 
@@ -71,6 +71,15 @@ Kekurangan:
     Selector yang menargetkan elemen yang memiliki id yang unik.
     
     Contoh: jika kita memiliki elemen h1 dengan suatu id, maka CSS hanya menargetkan elemen h1 tersebut saja.
+
+4. :hover 
+    Ketika mouse meng"hover" diatas elemen tersebut
+
+5. ::before
+    Konten sebelum perubahan yang diinginkan
+
+6. ::after
+    Konten setelah perubahan yang diinginkan
 
 
 ### Jelaskan bagaimana car akamu mengimplementasikan checklist di atas.
