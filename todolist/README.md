@@ -5,7 +5,7 @@ Aplikasi dari Katalog terdapat dalam link: [https://eda-pbp-tugas-2.herokuapp.co
 
 ### Apa perbedaan dari inline, internal, dan external CSS? Apa saja kelebihan dan kekurangan dari masing-masing style?
 
-###### Inline: 
+#### Inline: 
 Pengaplikasian CSS ditulis di dalam inline tag suatu komponen HTML
 
 Kelebihan:
@@ -16,7 +16,7 @@ Kelebihan:
 Kekurangan:
 - Harus diterapkan satu persatu pada setiap elemen.
 
-###### Internal
+#### Internal
 Pengaplikasian CSS ditulis di file HTML, biasanya di bagian bawah dan di dalam tag <style> </style>
 
 Kelebihan:
@@ -28,7 +28,7 @@ Kekurangan:
 - Meningkatkan waktu akses website
 - Tidak efisien jika terdapat banyak file HTML yang ingin diterapkan CSS.
 
-###### External
+#### External
 Pengaplikasian CSS ditulis di file yang berbeda dengan file HTML dan biasanya diletakan setelah bagian <head> (reccomended)
 
 Kelebihan:
