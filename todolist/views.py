@@ -23,7 +23,6 @@ def show_todolist(request):
 
 def register(request):
     form = UserCreationForm()
-
     if request.method == "POST":
         form = UserCreationForm(request.POST)
         if form.is_valid():
@@ -56,13 +55,30 @@ def logout_user(request):
     response.delete_cookie('last_login')
     return response
 
-@login_required(login_url='login/')
+
 def show_create_page(request):
     if request.method == 'POST':
         title = request.POST.get('title')
         description = request.POST.get('description')
         todo = TodoListAttributes.objects.create(title=title, description=description,date=datetime.date.today(), is_finished=False, user=request.user)
 
-        return HttpResponseRedirect(reverse("todolist:show_todolist")) 
+        return HttpResponse("") 
 
     return render(request, "create.html")
+
+
+# Lab 6
+
+def todolist_json(request):
+    user = request.user
+    data = TodoListAttributes.objects.filter(user=user)
+    return HttpResponse(serializers.serialize("json", data), content_type="application/json")
+
+@login_required(login_url='/todolist/login/')
+def show_todolist_ajax(request):
+    user = request.user
+    context = {
+        'nama': user.username,
+        'last_login': request.COOKIES['last_login'],
+    }
+    return render(request, "todolist_ajax.html", context)
